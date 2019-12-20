@@ -3,7 +3,12 @@
 
 {% block content %}
 
-
-
+<h1>Cadastro</h1>
+<h3>Faça um pedido</h3>
+<form method="POST">
+    {% csrf_token %}
+    {{formulario.as_p}}
+    <button>Enviar Pedido</button>
+</form>
 
 {% endblock %} 
